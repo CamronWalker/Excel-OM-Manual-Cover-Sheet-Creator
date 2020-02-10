@@ -15,6 +15,9 @@ Sub CoverCreator_Sub()
     ChDrive ExportFolderPath
     
     For i = LBound(InputFields_Array) To UBound(InputFields_Array)
+        'Clear previous template entries
+        Worksheets("Template").Range("A15:A29").Value = ""
+        
         'Get File Name
         coverName = InputFields_Array(i, 1) & " - " & InputFields_Array(i, 2)
         
