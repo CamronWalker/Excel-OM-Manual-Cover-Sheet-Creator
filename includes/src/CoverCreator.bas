@@ -24,7 +24,6 @@ Sub CoverCreator_Sub()
         Range("SpecNumber_Output").Value = InputFields_Array(i, 1)
         Range("SpecDesc_Output").Value = InputFields_Array(i, 2)
         subs_Array = Split(InputFields_Array(i, 3), "----")
-        
         subRows_Count = Range("SubStartingRow_Number").Value
         
         For Each subs In subs_Array
